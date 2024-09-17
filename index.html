@@ -8,25 +8,39 @@
 		content="width=device-width, initial-scale=1.0">
 	<script src="./js/index.js" defer></script>
 	<link rel="stylesheet" href="./css/style.css">
-	<title>BMI Calculator</title>
+	<title data-translation="title">BMI Calculator</title>
 </head>
 
 <body>
 	<div class="wrapper">
 		<header class="header">
-			<a href="./BMIcalculator.html" alt="logo"
+			<a href="../BodyMassIndex/index.html" alt="logo"
 				class="logo"><img src="./img/bmi48px.png"
 					alt=""></a>
-			<span class="bmi-header">Body Mass Index</span>
+			<span id="bmiHeader"
+				data-translation="bmiHeader">Wskaźnik Masy
+				Ciała</span>
+
+			<select name="selectLang" id="language">
+				<option class="polish" value="pl" selected>
+					PL
+				</option>
+				<option class="english" value="en">EN
+				</option>
+			</select>
+
 		</header>
 		<main class="main">
 			<div class="BMI-description">
-				<h2 class="title">BMI (ang. body mass index)
+				<h2 class="title">BMI (ang. body
+					mass index)
 				</h2>
 				<article class="about">
-					<p class="about-BMI">Wskaźnik masy ciała (ang.
+					<p class="about-BMI" data-translation="about-BMI">
+						Wskaźnik
+						masy ciała (ang.
 						body
-						mass index, <span>BMI</span>),
+						mass index, BMI),
 						wskaźnik Queteleta II – współczynnik powstały
 						przez
 						podzielenie masy ciała podanej w kilogramach
@@ -44,32 +58,47 @@
 						serca, miażdżycą. Przyjmuje się, że większe BMI
 						wiąże się ze zwiększonym ryzykiem dla zdrowia i
 						życia.</p>
-					<p class="desired-BMI">Pożądany BMI <span>zależy
+					<p class="desired-BMI"
+						data-translation="desired-BMI">
+						Pożądany BMI <span>zależy
 							od
 							wieku</span>
 						i wynosi odpowiednio:</p>
 					<ul class="desired-BMI-list">
-						<li class="desired-age-BMI">19 – 24 lata: 19 –
+						<li class="desired-age-BMI"
+							data-translation="age">
+							19 – 24 lata: 19 –
 							24
 						</li>
-						<li class="desired-age-BMI">25 – 34 lata: 20 –
+						<li class="desired-age-BMI"
+							data-translation="age">
+							25 – 34 lata: 20 –
 							25
 						</li>
-						<li class="desired-age-BMI">35 – 44 lata: 21 –
+						<li class="desired-age-BMI"
+							data-translation="age">
+							35 – 44 lata: 21 –
 							26
 						</li>
-						<li class="desired-age-BMI">45 – 54 lata: 22 –
+						<li class="desired-age-BMI"
+							data-translation="age">
+							45 – 54 lata: 22 –
 							27
 						</li>
-						<li class="desired-age-BMI">55 – 64 lata: 23 –
+						<li class="desired-age-BMI"
+							data-translation="age">
+							55 – 64 lata: 23 –
 							28
 						</li>
-						<li class="desired-age-BMI">ponad 64 lata: 24 –
+						<li class="desired-age-BMI"
+							data-translation="age">
+							ponad 64 lata: 24 –
 							29
 						</li>
 					</ul>
 					<div class="expression">
-						<p class="expression-description">Poniżej jest
+						<p class="expression-description"
+							data-translation="">Poniżej jest
 							pokazany wzór
 							na BMI, gdzie masa ciała jest podana w
 							kilogramach (kg), a wysokość ciała w metrach
@@ -78,7 +107,8 @@
 						<img class="bmi-expression"
 							src="./img/BMI-expression.svg"
 							alt="expression">
-						<p class="expression-description">Dla masy
+						<p class="expression-description"
+							data-translation="">Dla masy
 							podanej w funtach (lb) a wysokości ciała w
 							calach (in):
 						</p>
@@ -88,16 +118,29 @@
 					</div>
 				</article>
 
-				<button class="open-calculate">Otwórz
+				<button class="open-calculate"
+					data-translation="">Otwórz
 					kalkulator</button>
 			</div>
 
 			<div class="summary">
 				<div class="bmi-calculator hidden">
+
+					<!-- <select class="version hidden"
+						name="calculate-version">
+						<option class="europe" value="metric">Europejski
+							(System
+							Metryczny)</option>
+						<option class="american" value="imperial">
+							Amerykański
+							(System
+							Imperialny)</option>
+					</select> -->
+
 					<input type="text" class="weight"
-						placeholder="Enter your weight(kg)">
+						placeholder="Podaj swoją wagę(kg)">
 					<input type="text" class="height"
-						placeholder="Enter your height(m)">
+						placeholder="Podaj swój wzrost(m)">
 					<button type="button"
 						class="calculate"><span>Obliczyć</span></button>
 					<div class="result hidden">
@@ -108,33 +151,44 @@
 				<div class="value-ranges hidden">
 					<table>
 						<tr>
-							<td class="indicator">BMI (kg/m²) </td>
-							<td class="body-mass">Waga ciała</td>
-							<td class="risk-of-disease">Ryzyko chorób
+							<td class="indicator" data-translation="">BMI
+								(kg/m²) </td>
+							<td class="body-mass" data-translation="">Waga
+								ciała</td>
+							<td class="risk-of-disease"
+								data-translation="">Ryzyko chorób
 								towarzyszących otyłości</td>
 						</tr>
 						<tr>
 							<td class="indicator">&#60;18,5</td>
-							<td class="body-mass">niedowaga</td>
-							<td class="risk-of-disease">minimalne, ale
+							<td class="body-mass" data-translation="">
+								niedowaga</td>
+							<td class="risk-of-disease"
+								data-translation="">minimalne, ale
 								zwiększony poziom
 								wystąpienia innych
 								problemów zdrowotnych </td>
 						</tr>
 						<tr>
 							<td class="indicator">18,5 - 24,99</td>
-							<td class="body-mass">optimun</td>
-							<td class="risk-of-disease">minimalne </td>
+							<td class="body-mass" data-translation="">
+								optimun</td>
+							<td class="risk-of-disease"
+								data-translation="">minimalne </td>
 						</tr>
 						<tr>
 							<td class="indicator">25,0 - 29,99</td>
-							<td class="body-mass">nadwaga</td>
-							<td class="risk-of-disease">średnie</td>
+							<td class="body-mass" data-translation="">
+								nadwaga</td>
+							<td class="risk-of-disease"
+								data-translation="">średnie</td>
 						</tr>
 						<tr>
 							<td class="indicator">&#62;30,0</td>
-							<td class="body-mass">otyłość</td>
-							<td class="risk-of-disease">bardzo wysokie
+							<td class="body-mass" data-translation="">
+								otyłość</td>
+							<td class="risk-of-disease"
+								data-translation="">bardzo wysokie
 							</td>
 						</tr>
 					</table>
@@ -142,9 +196,11 @@
 			</div>
 		</main>
 		<footer class="footer">
-			<p class="thank-you">Dziękujemy za skorzystanie z
+			<p class="thank-you" data-translation="">Dziękujemy za
+				skorzystanie z
 				naszych usług</p>
-			<span class="RODO">&copy; 2024 Example Company | All
+			<span class="RODO" data-translation="">&copy; 2024
+				Example Company | All
 				Rights
 				Reserved</span>
 		</footer>
