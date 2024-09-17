@@ -82,14 +82,27 @@ body {
 		width: 100%;
 		background: linear-gradient(180deg, rgba(15, 155, 150, 1) 0%, rgba(41, 24, 126, 1) 100%);
 		display: grid;
-		grid-template-columns: 3.75rem 1fr;
+		grid-template-columns: 3.75rem 1fr 3.125rem;
 		justify-items: center;
 	}
 
-	.bmi-header {
+	#bmiHeader {
 		color: #fff;
 		align-self: center;
 	}
+
+	#langChange {
+		width: 2.8125rem;
+		height: 1.5rem;
+		align-self: center;
+		padding-left: 0.3125rem;
+		margin-right: 0.9375rem;
+		font-family: 'Roboto', sans-serif;
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1.25rem;
+	}
+
 
 	.main {
 		width: 100%;
@@ -131,7 +144,6 @@ body {
 		line-height: 1.5;
 	}
 
-	.about-BMI>span,
 	.desired-BMI>span {
 		font-weight: bold;
 	}
