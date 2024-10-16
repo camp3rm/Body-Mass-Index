@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	line-height: 1;
+
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+button {
+	line-height: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+	cursor: pointer;
+	color: inherit;
+	background-color: transparent;
+}
+
+body {
+	font-weight: 400;
+	font-size: 1rem;
+	color: #646d70;
+}
+
+@media (min-width: 20rem) and (max-width: 30rem) {
+	.wrapper {
+		width: 100%;
+		height: auto;
+		overflow: clip;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+		overflow-y: scroll;
+		height: 100vh;
+		font-family: 'Roboto', sans-serif;
+		font-size: 1rem;
+		font-weight: 500;
+		line-height: 1.25rem;
+		background: rgb(15, 155, 150);
+		background: linear-gradient(270deg, rgba(15, 155, 150, 1) 0%, rgba(41, 24, 126, 1) 100%);
+	}
+
+	.header {
+		height: 3.125rem;
+		width: 100%;
+		background: linear-gradient(180deg, rgba(15, 155, 150, 1) 0%, rgba(41, 24, 126, 1) 100%);
+		display: grid;
+		grid-template-columns: 3.75rem 1fr 3.125rem;
+		justify-items: center;
+	}
+
+	#bmiHeader {
+		color: #fff;
+		align-self: center;
+	}
+
+	#langChange {
+		height: 1.875rem;
+		align-self: center;
+		padding-left: 0.3125rem;
+		margin-right: 0.9375rem;
+		font-family: 'Roboto', sans-serif;
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1.25rem;
+	}
+
+
+	.main {
+		width: 100%;
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.BMI-description {
+		width: 80%;
+		/* margin: 0 auto; */
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		align-self: center;
+	}
+
+	.BMI-description {
+		margin: 0 auto;
+		font-weight: 400;
+		color: #fff;
+	}
+
+	.title {
+		margin: 1.875rem 0;
+		font-size: 1.25rem;
+	}
+
+	.about,
+	.about-BMI,
+	.desired-BMI,
+	.desired-BMI-list,
+	.desired-age-BMI {
+		font-size: 1rem;
+		font-weight: 400;
+		line-height: 1.5;
+	}
+
+
+	.desired-BMI>span {
+		font-weight: bold;
+		text-decoration: underline;
+	}
+
+	.desired-BMI-list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.expression {
+		margin: 1.5625rem auto;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.open-calculate {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0.625rem;
+		background-color: #646d70;
+		color: #fff;
+		height: 2.5rem;
+		margin-bottom: 1.5625rem;
+	}
+
+	.result {
+		display: none;
+	}
+
+	.hidden {
+		display: none !important;
+	}
+
+	.value-ranges {
+		font-size: 0.75rem;
+		display: flex;
+
+	}
+
+	.value-ranges>table {
+		border-collapse: collapse;
+		width: 100%;
+	}
+
+	.value-ranges>table td,
+	.value-ranges>table th {
+		padding: 0.1563rem 0.1563rem 0.1563rem 0.2188rem;
+
+	}
+
+	.repeat-calculate {
+		margin: 1.5625rem auto;
+		color: #fff;
+		text-align: center;
+	}
+
+	.reload {
+		color: yellow;
+	}
+
+	.indicator {
+		width: 4.6875rem;
+	}
+
+	.indicator,
+	.body-mass,
+	.risk-of-disease {
+		border: 0.125rem solid black;
+		color: #fff;
+
+
+	}
+
+	.bmi-expression {
+		width: 100%;
+		align-self: center;
+		margin: 0.9375rem auto;
+		background-color: #fff;
+		padding: 0.625rem;
+	}
+
+
+	.summary {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.bmi-calculator {
+		display: flex;
+		width: 90%;
+		height: auto;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		font-size: 0.875rem;
+	}
+
+	.unit-container {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 1.25rem;
+
+	}
+
+
+	.weight,
+	.height {
+		width: 80%;
+		height: 1.875rem;
+		background-color: #646d70;
+		color: #fff;
+		border: none;
+		border-radius: 0.625rem;
+		margin: 0.3125rem auto auto auto;
+	}
+
+
+	.weight-label,
+	.height-label {
+		align-self: flex-start;
+		color: #fff;
+		margin-left: 2.1875rem;
+	}
+
+
+	#errorMessageWeight,
+	#errorMessageHeight {
+		width: 80%;
+		margin-bottom: 0.625rem;
+		color: rgb(231, 206, 206);
+		font-size: 0.625rem;
+	}
+
+	.valid {
+		display: none;
+	}
+
+	.invalid {
+		display: block;
+	}
+
+	.calculate,
+	.result {
+		width: 80%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 0.625rem;
+		background-color: #646d70;
+		color: #fff;
+	}
+
+	.result {
+		margin: 0.625rem auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 1.875rem;
+
+	}
+
+	.calculate {
+		height: 1.875rem;
+		margin: 0.625rem;
+	}
+
+
+
+
+	.calculate>span {
+		font-family: 'Roboto', sans-serif;
+	}
+
+	input {
+		background-color: black;
+		padding: 0.9375rem 0rem 0.9375rem 0.9375rem;
+		cursor: pointer;
+		/* color: white; */
+
+	}
+
+	input:focus {
+		outline: none;
+	}
+
+
+	footer {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: linear-gradient(180deg, rgba(15, 155, 150, 1) 0%, rgba(41, 24, 126, 1) 100%);
+	}
+
+	.thank-you,
+	.RODO {
+		font-weight: 400;
+		line-height: 1.5;
+		color: #fff;
+
+	}
+
+	.thank-you {
+		font-family: "Satisfy", sans-serif;
+		font-size: 1rem;
+		margin: 0.625rem auto;
+	}
+
+	.RODO {
+		font-size: 0.4375rem;
+		align-self: flex-start;
+	}
+
+}

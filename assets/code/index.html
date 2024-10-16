@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0">
+	<script src="./js/index.js" defer></script>
+	<link rel="stylesheet" href="./css/style.css">
+	<title data-translation="title">BMI Calculator</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<a title="link-to-homepage" href="index.html"
+				alt="logo" class="logo"><img
+					src="../img/bmi48px.png" alt=""></a>
+			<span id="bmiHeader"
+				data-translation="bmiHeader">Wskaźnik Masy
+				Ciała</span>
+
+			<select title="selectLang" name="selectLang"
+				id="langChange">
+				<option class="polish" value="pl" selected>
+					PL
+				</option>
+				<option class="english" value="en">EN
+				</option>
+			</select>
+
+		</header>
+		<main class="main">
+			<div class="BMI-description">
+				<h2 class="title">BMI (ang. body
+					mass index)
+				</h2>
+				<article class="about">
+					<p class="about-BMI" data-translation="about-BMI">
+						Wskaźnik
+						masy ciała (ang.
+						body
+						mass index, BMI),
+						wskaźnik Queteleta II – współczynnik powstały
+						przez
+						podzielenie masy ciała podanej w kilogramach
+						przez
+						kwadrat wysokości podanej w metrach. Dla oceny
+						prawidłowego rozwoju dziecka wykorzystuje się
+						siatki
+						centylowe, które powinny być dostosowane dla
+						danej
+						populacji.
+						Oznaczanie wskaźnika masy ciała ma znaczenie w
+						ocenie zagrożenia chorobami związanymi z nadwagą
+						i
+						otyłością, np. cukrzycą, chorobą niedokrwienną
+						serca, miażdżycą. Przyjmuje się, że większe BMI
+						wiąże się ze zwiększonym ryzykiem dla zdrowia i
+						życia.</p>
+					<p class="desired-BMI"
+						data-translation="desired-BMI">
+						Pożądany BMI <span>zależy
+							od
+							wieku</span>
+						i wynosi odpowiednio:</p>
+					<ul class="desired-BMI-list">
+						<li class="desired-age-BMI">
+							19 – 24 <span
+								data-translation="age">lata</span>:
+							19 – 24</li>
+						<li class="desired-age-BMI">
+							25 – 34 <span
+								data-translation="age">lata</span>:
+							20 – 25</li>
+						<li class="desired-age-BMI">
+							35 – 44 <span
+								data-translation="age">lata</span>:
+							21 – 26</li>
+						<li class="desired-age-BMI">
+							45 – 54 <span
+								data-translation="age">lata</span>:
+							22 – 27</li>
+						<li class="desired-age-BMI">
+							55 – 64 <span
+								data-translation="age">lata</span>:
+							23 – 28</li>
+						<li class="desired-age-BMI">
+							ponad 64 <span
+								data-translation="age">lata</span>:
+							24 – 29</li>
+					</ul>
+					<div class="expression">
+						<p class="expression-description"
+							data-translation="expression-w-h">Poniżej
+							jest
+							pokazany wzór
+							na BMI, gdzie masa ciała jest podana w
+							kilogramach (kg), a wysokość ciała w metrach
+							(m) oraz dla masy
+							podanej w funtach (lb) a wysokości ciała w
+							calach (in)
+						</p>
+						<img class="bmi-expression"
+							src="./img/BMIformula.svg" alt="expression">
+					</div>
+				</article>
+
+				<button class="open-calculate"
+					data-translation="open-calculate">Otwórz
+					kalkulator</button>
+			</div>
+
+			<div class="summary">
+				<div class="bmi-calculator hidden">
+					<div class="unit-container">
+						<label for="weight" class="weight-label"
+							data-translation="weight">Podaj swoją
+							wagę(kg)</label>
+						<input type="text" class="weight" id="weight"
+							required>
+						<span id="errorMessageWeight"
+							data-translation="errorMessageWeight"
+							class="valid">Nieprawidłowe
+							dane! Proszę wpisać prawidłową liczbe.</span>
+					</div>
+					<div class="unit-container">
+						<label for="height" class="height-label"
+							data-translation="height">Podaj swój
+							wzrost(m)</label>
+						<input type="text" class="height" id="height"
+							required>
+						<span id="errorMessageHeight"
+							data-translation="errorMessageHeight"
+							class="valid">Nieprawidłowe
+							dane! Proszę wpisać prawidłową liczbe.</span>
+					</div>
+					<button type="button" class="calculate"><span
+							data-translation="calculate">Obliczyć</span></button>
+					<div class="result hidden">
+						<span class="result-field"
+							data-translation="result"></span>
+					</div>
+				</div>
+
+				<div class="value-ranges hidden">
+					<table>
+						<tr>
+							<td class="indicator" data-translation="">BMI
+								(kg/m²) </td>
+							<td class="body-mass"
+								data-translation="body-mass">Waga
+								ciała</td>
+							<td class="risk-of-disease"
+								data-translation="risk">Ryzyko chorób
+								towarzyszących otyłości</td>
+						</tr>
+						<tr>
+							<td class="indicator">&#60;18,5</td>
+							<td class="body-mass"
+								data-translation="underweight">
+								niedowaga</td>
+							<td class="risk-of-disease"
+								data-translation="underweight-minimum">
+								minimalne, ale
+								zwiększony poziom
+								wystąpienia innych
+								problemów zdrowotnych</td>
+						</tr>
+						<tr>
+							<td class="indicator">18,5 - 24,99</td>
+							<td class="body-mass"
+								data-translation="optimum">
+								optimum</td>
+							<td class="risk-of-disease"
+								data-translation="optimum-minimum">minimalne
+							</td>
+						</tr>
+						<tr>
+							<td class="indicator">25,0 - 29,99</td>
+							<td class="body-mass"
+								data-translation="overweight">
+								nadwaga</td>
+							<td class="risk-of-disease"
+								data-translation="overweight-medium">średnie
+							</td>
+						</tr>
+						<tr>
+							<td class="indicator">&#62;30,0</td>
+							<td class="body-mass"
+								data-translation="obesity">
+								otyłość</td>
+							<td class="risk-of-disease"
+								data-translation="obesity-high">bardzo
+								wysokie
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="repeat-calculate hidden">
+					<span data-translation="repeat-calculate">
+						Jeśli chcesz obliczyć swój wskaźnik masy ciała,
+						<a href="index.html" class="reload">odśwież
+							stronę</a>
+					</span>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<p class="thank-you" data-translation="thank-you">
+				Dziękujemy za
+				skorzystanie z
+				naszych usług</p>
+			<span class="RODO" data-translation="">&copy; 2024
+				Example Company | All
+				Rights
+				Reserved</span>
+		</footer>
+	</div>
+</body>
+
+</html>

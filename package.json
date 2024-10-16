@@ -1,0 +1,14 @@
+{
+  "name": "bodymassindex",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "live-server",
+    "start:npm": "npx live-server",
+    "start:yarn": "yarn live-server"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
