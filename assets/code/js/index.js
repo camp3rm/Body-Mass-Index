@@ -90,7 +90,7 @@ calculateBtn.addEventListener('click', calculate);
 peopleWeight.addEventListener('input', validation);
 peopleHeight.addEventListener('input', validation);
 
-const translationUrl = "./assets/lang.json";
+const translationUrl = "../../../assets/lang.json";
 
 async function loadTranslations() {
 	try {
