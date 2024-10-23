@@ -1,4 +1,4 @@
-# BMI Calculator
+ # BMI Calculator
 ***
 ## Overview of BMI Calculator
 
@@ -14,15 +14,23 @@ This application will take two inputs from the user, height (in m) and weight (i
 
 ## How to run the application:
 
- 1. Clone the repository. Source `github.com/camp3rm/Body-Mass-Index`
+ 1. Clone the repository.
+ ```bash
+  Source `https://github.com/camp3rm/Body-Mass-Index`
+ ```
  2. Instalation of node_modules( yarn or npm ):
-    - install Node.js from official store
-    - Download yarn  using npm -> "npm install -g yarn"
-    - Download live-server using npm -> "npm install -g live-server"
-    - Download live-server using yarn -> "yarn add -D live-server"
-    - Open and write in the terminal: cd path/to/your/projeсt
-    - Install dependencies: yarn and npm install
- 3. Run the project:
-    - Write in the terminal: yarn start or npm start
+    ```
+    npm install
+    ```
+    ```
+    yarn install
+    ```
+ 3. Run:
+    ```
+    yarn start
+    ```
+    ```
+    npm run start
+    ```
 
 ***
