@@ -15,9 +15,9 @@ This application will take two inputs from the user, height (in m) and weight (i
 ## How to run the application:
 
  1. Clone the repository.
- ```bash
-  Source `https://github.com/camp3rm/Body-Mass-Index`
- ```
+    ```bash
+    Source `https://github.com/camp3rm/Body-Mass-Index`
+    ```
  2. Instalation of node_modules( yarn or npm ):
     ```
     npm install
