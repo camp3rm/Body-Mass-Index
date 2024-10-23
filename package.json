@@ -4,11 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "live-server",
-    "start:npm": "npx live-server",
-    "start:yarn": "yarn live-server"
+    "start": "http-server -o assets/code/index.html"
   },
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "http-server": "^14.1.1"
   }
 }
