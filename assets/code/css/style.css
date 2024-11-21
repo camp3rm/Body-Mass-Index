@@ -288,11 +288,11 @@ body {
 	}
 
 	.valid {
-		display: none;
+		opacity: 0;
 	}
 
 	.invalid {
-		display: block;
+		opacity: 1;
 	}
 
 	.calculate,
