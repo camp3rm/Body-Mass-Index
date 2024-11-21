@@ -41,20 +41,20 @@ function validation(e) {
 			document.getElementById("errorMessageWeight").classList.remove("valid");
 			document.getElementById("errorMessageWeight").classList.add("invalid");
 			calculateBtn.disabled = true;
-			result.classList.remove("invalid");
-			ranges.classList.remove("invalid");
-			result.classList.add("valid");
-			ranges.classList.add("valid")
+			result.classList.remove("valid");
+			ranges.classList.remove("valid");
+			result.classList.add("invalid");
+			ranges.classList.add("invalid")
 			return
 		}
 		if (e.target.id == "height") {
 			document.getElementById("errorMessageHeight").classList.remove("valid");
 			document.getElementById("errorMessageHeight").classList.add("invalid");
 			calculateBtn.disabled = true;
-			result.classList.remove("invalid");
-			ranges.classList.remove("invalid");
-			result.classList.add("valid");
-			ranges.classList.add("valid")
+			result.classList.remove("valid");
+			ranges.classList.remove("valid");
+			result.classList.add("invalid");
+			ranges.classList.add("invalid")
 			return
 		}
 
@@ -63,10 +63,10 @@ function validation(e) {
 			document.getElementById("errorMessageWeight").classList.remove("invalid");
 			document.getElementById("errorMessageWeight").classList.add("valid");
 			calculateBtn.disabled = false;
-			result.classList.remove('valid');
-			ranges.classList.remove('valid');
-			result.classList.add("invalid");
-			ranges.classList.add("invalid")
+			result.classList.remove('invalid');
+			ranges.classList.remove('invalid');
+			result.classList.add("valid");
+			ranges.classList.add("valid")
 			return
 		}
 		if (e.target.id == "height") {
@@ -74,10 +74,10 @@ function validation(e) {
 			document.getElementById("errorMessageHeight").classList.remove("invalid");
 			document.getElementById("errorMessageHeight").classList.add("valid");
 			calculateBtn.disabled = false;
-			result.classList.remove('valid');
-			ranges.classList.remove('valid');
-			result.classList.add("invalid");
-			ranges.classList.add("invalid")
+			result.classList.remove('invalid');
+			ranges.classList.remove('invalid');
+			result.classList.add("valid");
+			ranges.classList.add("valid")
 			return
 		}
 
