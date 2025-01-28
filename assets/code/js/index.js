@@ -70,7 +70,6 @@ function validation(e) {
 			return
 		}
 		if (e.target.id == "height") {
-			console.log(e.target.length);
 			document.getElementById("errorMessageHeight").classList.remove("invalid");
 			document.getElementById("errorMessageHeight").classList.add("valid");
 			calculateBtn.disabled = false;
